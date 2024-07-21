@@ -39,23 +39,21 @@ function Navbar() {
           <motion.div
             initial={{ height: 0 }}
             animate={{ height: "auto" }}
-            exit={{ height: 0, transition: { delay: 1 } }}
+            exit={{ height: 0 }}
+            className=" overflow-hidden"
           >
-            <AnimatePresence>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { delay: 0.2 } }}
-                exit={{ height: 0 }}
-                className="menu_links text-[#8C52FF] text-xl font-semibold p-7 flex flex-col items-end gap-5"
-              >
-                {menuOpen &&
-                  navLinks.map((item, index) => (
-                    <ul key={index}>
-                      <Link onClick={() => handleMenuOpen()}>{item}</Link>
-                    </ul>
-                  ))}
-              </motion.div>
-            </AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.2 } }}
+              className="menu_links text-[#8C52FF] text-xl font-semibold p-7 flex flex-col items-end gap-5"
+            >
+              {menuOpen &&
+                navLinks.map((item, index) => (
+                  <ul key={index}>
+                    <Link onClick={() => handleMenuOpen()}>{item}</Link>
+                  </ul>
+                ))}
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
