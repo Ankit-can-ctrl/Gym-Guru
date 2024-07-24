@@ -6,7 +6,7 @@ function Header() {
           CrossFit Gym in Knowledge park 2 , Greater Noida
         </h1>
         <h2 className=" text-gray-400 font-semibold">
-          Ankit:+91(97655768778897) <br /> ak537664@gmail.com
+          Ankit:+91(97655768778897)
         </h2>
       </div>
     </div>
