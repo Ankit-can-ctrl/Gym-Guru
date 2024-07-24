@@ -20,7 +20,7 @@ function LandingScreen() {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <Navbar />
-        <div className=" z-10 text-white px-2 font-Saira absolute bottom-[2%] text-center w-full">
+        <div className=" z-10  text-white px-2 font-Saira absolute bottom-[2%] text-center w-full">
           <h1 className=" text-7xl text-white md:text-9xl font-bold">
             Unleash the Beast Within.
           </h1>

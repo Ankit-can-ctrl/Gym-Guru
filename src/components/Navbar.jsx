@@ -15,7 +15,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="navigation_main bg-gradient-to-b from-black to-transparent w-full">
+    <nav className="navigation_main absolute z-20 bg-gradient-to-b from-black to-transparent w-full overflow-clip">
       <div className="title_logo p-5 w-full text-white flex items-center justify-between ">
         <img
           src="https://uploads-ssl.webflow.com/6255cb896cc97d5faf18caf7/6255ed3eded8d1889d5dd8cf_crossfit%20gym%20logo.svg"
@@ -48,7 +48,7 @@ function Navbar() {
           </button>
         </div>
       </div>
-      <div className="mobile_links z-[100] lg:hidden text-white font-Saira">
+      <div className="mobile_links  lg:hidden text-white font-Saira">
         <AnimatePresence>
           {menuOpen && (
             <motion.div
