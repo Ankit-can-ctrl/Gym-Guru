@@ -1,5 +1,6 @@
 import Benefits from "../components/Benefits";
 import LandingScreen from "../components/LandingScreen";
+import Membership from "../components/Membership";
 import Program from "../components/Program";
 
 function Homepage() {
@@ -8,6 +9,7 @@ function Homepage() {
       <LandingScreen />
       <Benefits />
       <Program />
+      <Membership />
     </div>
   );
 }
