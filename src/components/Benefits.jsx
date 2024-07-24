@@ -8,7 +8,7 @@ function Benefits() {
       <h1 className="text-5xl md:text-8xl text-center font-semibold ">
         We offer something for everybody
       </h1>
-      <div className="Cards flex flex-col gap-16 md:flex-row flex-wrap items-center justify-center">
+      <div className="Cards flex flex-col gap-16 md:flex-row flex-wrap items-center justify-center overflow-hidden">
         <BenefitCards text="CrossFit Group Classes" image={image1} />
         <BenefitCards text="Personal Training" image={image2} />
         <BenefitCards text="Strength Training" image={image3} />
@@ -22,11 +22,12 @@ export default Benefits;
 
 function BenefitCards({ image, text }) {
   return (
-    <div
+    <a
+      href="#"
       style={{ backgroundImage: `url(${image})` }}
-      className=" bg-cover bg-center flex items-center justify-center rounded-md min-w-[340px] min-h-[300px]"
+      className=" bg-cover hover:scale-105 transition-all duration-500 bg-center flex items-center justify-center rounded-xl min-w-[340px] min-h-[300px]"
     >
       <h1 className="text-4xl font-semibold md:text-5xl p-5">{text}</h1>
-    </div>
+    </a>
   );
 }
