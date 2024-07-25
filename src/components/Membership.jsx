@@ -1,4 +1,5 @@
 import Plan from "./Plan";
+import Testimonials from "./Testimonials";
 const plansData = [
   {
     plan: "Month to Month",
@@ -31,7 +32,7 @@ function Membership() {
           Crushing your health and fitness goals starts here...
         </h1>
       </div>
-      <div className="plans py-18 md:py-24 px-3 flex md:gap-16 gap-5 flex-wrap items-center justify-center">
+      <div className="plans py-20 md:py-24 px-3 flex md:gap-16 gap-5 flex-wrap items-center justify-center">
         {plansData.map((item, index) => (
           <div key={index}>
             <Plan
@@ -43,6 +44,9 @@ function Membership() {
             />
           </div>
         ))}
+      </div>
+      <div className="testimonials">
+        <Testimonials />
       </div>
     </div>
   );
