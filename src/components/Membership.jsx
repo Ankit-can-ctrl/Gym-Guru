@@ -9,13 +9,13 @@ const plansData = [
   },
   {
     plan: "6 Month Membership",
-    price: "₹4599/Month",
+    price: "₹4599/6 Month",
     changes: "6 month",
     features: ["All classes", "All member events", "Full gym access"],
   },
   {
     plan: "1 Year Membership",
-    price: "₹7599/Month",
+    price: "₹7599/Year",
     changes: "Year",
     features: ["All classes", "All member events", "Full gym access"],
   },
