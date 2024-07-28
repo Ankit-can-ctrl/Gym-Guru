@@ -3,6 +3,7 @@ import About from "../components/About";
 import Benefits from "../components/Benefits";
 import Footer from "../components/Footer";
 import LandingScreen from "../components/LandingScreen";
+import Loaders from "../components/Loaders";
 import Membership from "../components/Membership";
 import Program from "../components/Program";
 
@@ -25,6 +26,7 @@ function Homepage() {
       <Membership />
       <About />
       <Footer />
+      {/* <Loaders /> */}
     </div>
   );
 }
