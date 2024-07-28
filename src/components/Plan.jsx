@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 function Plan({ plan, price, changes, features, index }) {
   return (
     <div
@@ -41,7 +43,9 @@ function Plan({ plan, price, changes, features, index }) {
           Charges every {changes} unless you cancel
         </h2>
         <button className="border-2 font-bold text-xl md:text-3xl hover:scale-110 transition-all duration-500 bg-black text-white px-3 py-1 rounded-full">
-          Start 7 day free trial
+          <Link to="Contact" smooth={true} duration={3000}>
+            Start 7 day free trial
+          </Link>
         </button>
       </div>
     </div>
