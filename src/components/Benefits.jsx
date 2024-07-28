@@ -1,7 +1,9 @@
+import { Link } from "react-scroll";
 import image1 from "../assets/Carousel/1.jpg";
 import image2 from "../assets/Carousel/2.jpg";
 import image3 from "../assets/Carousel/3.jpg";
 import image4 from "../assets/Carousel/4.jpg";
+
 function Benefits() {
   return (
     <div
@@ -12,10 +14,10 @@ function Benefits() {
         We offer something for everybody
       </h1>
       <div className="Cards flex flex-col gap-16 md:flex-row flex-wrap items-center justify-center overflow-hidden">
-        <BenefitCards text="CrossFit Group Classes" image={image1} />
-        <BenefitCards text="Personal Training" image={image2} />
-        <BenefitCards text="Strength Training" image={image3} />
-        <BenefitCards text="Member only Events" image={image4} />
+        <BenefitCards id="Group" text="CrossFit Group Classes" image={image1} />
+        <BenefitCards id="Personal" text="Personal Training" image={image2} />
+        <BenefitCards id="Strength" text="Strength Training" image={image3} />
+        <BenefitCards id="Event" text="Member only Events" image={image4} />
       </div>
     </div>
   );
@@ -23,14 +25,17 @@ function Benefits() {
 
 export default Benefits;
 
-function BenefitCards({ image, text }) {
+function BenefitCards({ id, image, text }) {
   return (
-    <a
+    <Link
+      to={id}
+      smooth={true}
+      duration={1500}
       href="#"
       style={{ backgroundImage: `url(${image})` }}
       className=" bg-cover hover:scale-105 transition-all duration-500 bg-center flex items-center justify-center rounded-xl min-w-[340px] min-h-[300px]"
     >
       <h1 className="text-4xl font-semibold md:text-5xl p-5">{text}</h1>
-    </a>
+    </Link>
   );
 }

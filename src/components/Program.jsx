@@ -5,6 +5,7 @@ import image7 from "../assets/Carousel/7.jpg";
 import image8 from "../assets/Carousel/8.jpg";
 const programData = [
   {
+    id: "Group",
     tag: "Group Crossfit Classes",
     heading: "Get fit while having fun with our group CrossFit classes.",
     points: [
@@ -15,6 +16,7 @@ const programData = [
     img: image5,
   },
   {
+    id: "Strength",
     tag: "Strength Training",
     heading: "Crush any strength program with our suite of strength equipment",
     points: [
@@ -25,6 +27,7 @@ const programData = [
     img: image6,
   },
   {
+    id: "Personal",
     tag: "Personal Training",
     heading:
       "Be guided every step of the way with one of our world class coaches",
@@ -32,6 +35,7 @@ const programData = [
     img: image7,
   },
   {
+    id: "Event",
     tag: "Member Only Events",
     heading: "Make new friends and get competitive with fun member events",
     points: [
@@ -51,6 +55,7 @@ function Program() {
       {programData.map((item, index) => (
         <div className="py-20" key={index}>
           <ProgramCard
+            id={item.id}
             index={index}
             tag={item.tag}
             heading={item.heading}

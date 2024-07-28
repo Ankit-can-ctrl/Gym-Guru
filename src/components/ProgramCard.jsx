@@ -1,6 +1,7 @@
-function ProgramCard({ tag, heading, points, img, index }) {
+function ProgramCard({ id, tag, heading, points, img, index }) {
   return (
     <div
+      id={id}
       className={`${
         (index + 1) % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
       } card flex flex-col gap-10 items-center`}
