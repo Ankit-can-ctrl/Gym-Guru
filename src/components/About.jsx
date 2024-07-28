@@ -2,7 +2,10 @@ import Contact from "./Contact";
 
 function About() {
   return (
-    <div className=" bg-black text-white font-Saira px-4 md:px-10 py-20 md:py-32 flex flex-col items-center justify-center gap-20">
+    <div
+      id="About"
+      className=" bg-black text-white font-Saira px-4 md:px-10 py-20 md:py-32 flex flex-col items-center justify-center gap-20"
+    >
       <div className="header flex flex-col items-center justify-center md:gap-16 gap-10">
         <div className="tag text-3xl border-white border-4 px-3 rounded-xl py-2 font-semibold md:text-6xl">
           About CrossFit Gym

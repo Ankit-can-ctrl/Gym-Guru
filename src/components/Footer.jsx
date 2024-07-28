@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className=" font-Saira text-white bg-black">
+    <div id="Footer" className=" font-Saira text-white bg-black">
       <div className=" border-t-2 border-gray-600" />
       <div className="footer flex flex-col gap-10 py-20 px-5 md:px-10 items-center">
         <img

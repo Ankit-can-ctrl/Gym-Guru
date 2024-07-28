@@ -44,7 +44,10 @@ const programData = [
 ];
 function Program() {
   return (
-    <div className="bg-black text-white font-Saira py-10 overflow-hidden">
+    <div
+      id="Program"
+      className="bg-black text-white font-Saira py-10 overflow-hidden"
+    >
       {programData.map((item, index) => (
         <div className="py-20" key={index}>
           <ProgramCard

@@ -4,7 +4,7 @@ import backgroundImage from "../assets/background.jpg";
 
 function LandingScreen() {
   return (
-    <div className={`bg-[url()]`}>
+    <div id="Home" className={`bg-[url()]`}>
       <Header />
       <div
         className="main w-full h-screen relative bg-cover bg-center"

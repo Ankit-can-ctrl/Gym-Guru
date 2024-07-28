@@ -22,7 +22,7 @@ function Contact() {
   };
 
   return (
-    <div className=" flex flex-col gap-10 lg:flex-row">
+    <div id="Contact" className=" flex flex-col gap-10 lg:flex-row">
       <div className="w-full flex flex-col gap-10 font-Saira">
         <h1 className=" text-4xl md:text-6xl text-center font-semibold">
           Claim your 7 day free trial

@@ -23,7 +23,10 @@ const plansData = [
 //#5F7252
 function Membership() {
   return (
-    <div className="bg-[#5F7252] w-full font-Saira text-white py-10 md:py-20">
+    <div
+      id="Membership"
+      className="bg-[#5F7252] w-full font-Saira text-white py-10 md:py-20"
+    >
       <div className=" flex flex-col gap-6 items-center justify-center px-5">
         <h1 className=" border-white border-4 rounded-xl font-semibold w-fit px-3 py-2 text-4xl">
           Membership

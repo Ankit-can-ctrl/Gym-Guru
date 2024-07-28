@@ -4,7 +4,10 @@ import image3 from "../assets/Carousel/3.jpg";
 import image4 from "../assets/Carousel/4.jpg";
 function Benefits() {
   return (
-    <div className=" text-white font-Saira bg-black w-full gap-10 py-20 flex flex-col items-center justify-center">
+    <div
+      id="BeneFits"
+      className=" text-white font-Saira bg-black w-full gap-10 py-20 flex flex-col items-center justify-center"
+    >
       <h1 className="text-5xl md:text-8xl text-center font-semibold ">
         We offer something for everybody
       </h1>
