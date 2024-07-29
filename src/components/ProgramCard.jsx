@@ -42,9 +42,9 @@ function ProgramCard({ id, tag, heading, points, img, index }) {
           </div>
         ))}
       </div>
-      <div className="program-image md:p-5">
+      <div className="program-image p-5">
         <img
-          className="rounded-xl object-cover object-center min-h-[800px] md:max-w-[900px]"
+          className="rounded-xl border-white border-4 object-cover object-center min-h-[800px] md:max-w-[900px]"
           src={img}
           alt="programs"
         />

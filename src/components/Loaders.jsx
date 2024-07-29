@@ -10,9 +10,9 @@ function Loaders() {
   //     },
   //   };
   return (
-    <div className=" bg-black flex flex-col items-center justify-center">
+    <div className=" bg-black flex flex-col items-center justify-center overflow-hidden">
       <Lottie
-        className="bg-black h-[900px]"
+        className="bg-black"
         animationData={animationData}
         loop={true}
         autoplay={true}
